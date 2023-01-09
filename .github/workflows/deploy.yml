@@ -22,6 +22,8 @@ jobs:
       - name: Install Railway
         run: npm i -g @railway/cli
 
+       - name: Print Secret
+        run: echo "$TOKEN"
 
       - name: Deploy
         uses: devtomio/action-railway@v1.1.4
