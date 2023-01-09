@@ -25,6 +25,6 @@ jobs:
         run: echo ${{ secrets.RAILWAY_TOKEN }}
 
       - name: Deploy
-        run: railway up
-        env:
-          RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}
+        uses: devtomio/action-railway@v1.1.4
+        with:
+          railway_token: ${{ secrets.RAILWAY_TOKEN }}
