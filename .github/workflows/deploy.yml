@@ -24,4 +24,4 @@ jobs:
       - name: Deploy
         uses: devtomio/action-railway@v1.1.4
         with:
-          railway_token: "b137d190-46b1-443c-9784-40970b8f46fa"
+          railway_token: ${{ secrets.RAILWAY_TOKEN }}
