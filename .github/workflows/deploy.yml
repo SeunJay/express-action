@@ -23,7 +23,7 @@ jobs:
         run: npm i -g @railway/cli
 
       - name: Print token
-        run: echo ${TOKEN}
+        run: echo "TOKEN: ${TOKEN}"
 
       - name: Deploy
         uses: devtomio/action-railway@v1.1.4
